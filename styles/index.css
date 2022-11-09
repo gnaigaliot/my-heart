@@ -134,8 +134,7 @@ body {
 
 .film::after {
   content: "  ";
-  line-height:30px;
-  font-size: 22px;
+  font-size: 18px;
   white-space: pre;
   font-family: monospace;
   font-weight: bold;
@@ -148,6 +147,13 @@ body {
   color:#fff;
   clip-path:polygon(0 0,100% 0,100% 100%,calc(100% - 20px) calc(100% - 20px),0 calc(100% - 20px));
   animation:dv-1 12s linear infinite;
+}
+
+@media only screen and (max-width: 576px) {
+  .film::after {
+    white-space: normal;
+    width: -webkit-fill-available;
+  }
 }
 
 @keyframes dv-0{
