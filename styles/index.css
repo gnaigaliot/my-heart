@@ -2,6 +2,7 @@ body {
   margin: 0;
   height: 100vh;
   display: flex;
+  gap: 16px;
   align-items:center;
   justify-content: center;
   flex-direction: column;
@@ -35,12 +36,15 @@ body {
 }
 
 /* loading 1 */
-[class*=classic]:before {
+.classic-1:before {
   content: "Loading...";
 }
 
-.classic-2 {
-  width: 150px;
+.classic-2:before {
+  content: "Almost done...";
+}
+
+.classic-1, .classic-2 {
   margin: 0 auto;
   font-weight: bold;
   font-family: sans-serif;
@@ -51,34 +55,6 @@ body {
 }
 
 @keyframes c2 {to{background-size: 100% 3px}}
-
-/* heart */
-.pulsing-3 {
-  width:50px;
-  height:50px;
-  color:#dc1818;
-  background:
-   radial-gradient(circle at 60% 65%, currentColor 62%, #ffffcc 65%) top left,
-   radial-gradient(circle at 40% 65%, currentColor 62%, #ffffcc 65%) top right,
-   linear-gradient(to bottom left, currentColor 42%,#ffffcc 43%) bottom left ,
-   linear-gradient(to bottom right,currentColor 42%,#ffffcc 43%) bottom right;
-  background-size:50% 50%;
-  background-repeat:no-repeat;
-  position:relative;
-}
-
-.pulsing-3:after {
-  content:"";
-  position:absolute;
-  inset:0;
-  background:inherit;
-  opacity:0.4;
-  animation:pl3 1s infinite;
-}
-
-@keyframes pl3 {
-  to {transform:scale(1.8);opacity:0}
-}
 
 /* dot */
 .dots-8 {
