@@ -1,6 +1,7 @@
-body {
+html, body {
   margin: 0;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   display: flex;
   gap: 16px;
   align-items:center;
@@ -94,4 +95,15 @@ body {
   position: absolute;
   bottom: 20px;
   font-size: 14px;
+}
+
+canvas {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  scale: none;
+}
+
+.hide-canvas {
+  z-index: -1;
 }
