@@ -37,7 +37,7 @@ $(function() {
       duration: 1.7, // particle duration in sec
       velocity: 150, // particle velocity in pixels/sec
       effect: -1.8, // play with this for a nice effect
-      size: 30, // particle size in pixels
+      size: 34, // particle size in pixels
     },
   };
 
