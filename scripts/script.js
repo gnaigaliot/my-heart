@@ -2,10 +2,9 @@ $(function() {
   // ready document
   $(".classic-1").hide();
   $(".classic-2").hide();
-  $(".dots-8").hide();
   let isAvailable = false;
 
-  $(".heart").on("click", function() {
+  $(".dog").on("click", function() {
     if (isAvailable) {
       return
     } else {
@@ -14,23 +13,18 @@ $(function() {
     
     $(this).toggleClass("is-active");
     $(".film").hide();
+    $(".dog").hide();
     $(".classic-1").show();
     
     setTimeout(function() {
       $(".classic-1").hide();
-      $(".dots-8").show();
-      
-      setTimeout(function() {
-        $(".dots-8").hide();
-        $(".classic-2").show();
+      $(".classic-2").show();
 
-        setTimeout(function() {
-          $(".classic-2").hide();
-          $(".heart").hide();
-          $("canvas").removeClass("hide-canvas");
-        }, 5000)
-      }, 5000);
-    }, 5000);
+      setTimeout(function() {
+        $(".classic-2").hide();
+        $("canvas").removeClass("hide-canvas");
+      }, 8000)
+    }, 8000);
   });
 
   // main heart

@@ -32,6 +32,7 @@
   .film::after {
     white-space: normal;
     width: -webkit-fill-available;
+    line-height: 24px;
   }
 }
 
@@ -41,9 +42,9 @@
 }
 
 @keyframes dv-1 {
-  0%, 35%    {content: " Hello Hương Vy!!! "}
-  35%, 70% {content: " I have a gift for you "}
-  70%, 100% {content: " Let hit the heart below "}
+  0%, 35%    {content: " Hello em bé!!! "}
+  35%, 70% {content: " Có món quà tặng em bé nè "}
+  70%, 100% {content: " Ấn vào con Corgi đi nhaaaa... "}
 }
 
 .film {
